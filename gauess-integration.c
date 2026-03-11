@@ -3,7 +3,7 @@
 
 float f(float x)
 {
-    return x*x;   // example function f(x) = x^2
+    return x*x;   
 }
 
 int main()

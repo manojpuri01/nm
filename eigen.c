@@ -4,8 +4,8 @@
 int main()
 {
     int n,i,j;
-    float a[10][10],x[10],y[10],nx[10],E[10];
-    float k,el;
+    float a[10][10],x[10]={1,1,1},y[10],nx[10];
+    float k,el=0.001;
 
     printf("Enter dimension of matrix: ");
     scanf("%d",&n);
@@ -14,13 +14,6 @@ int main()
     for(i=0;i<n;i++)
         for(j=0;j<n;j++)
             scanf("%f",&a[i][j]);
-
-    printf("Enter initial guess vector:\n");
-    for(i=0;i<n;i++)
-        scanf("%f",&x[i]);
-
-    printf("Enter accuracy limit: ");
-    scanf("%f",&el);
 
     while(1)
     {
@@ -39,15 +32,10 @@ int main()
         for(i=0;i<n;i++)
             nx[i]=y[i]/k;
 
-        for(i=0;i<n;i++)
-            E[i]=fabs(nx[i]-x[i]);
-
         int flag=1;
         for(i=0;i<n;i++)
-        {
-            if(E[i]>el)
+            if(fabs(nx[i]-x[i])>el)
                 flag=0;
-        }
 
         if(flag==1)
             break;
