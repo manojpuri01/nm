@@ -4,7 +4,7 @@ int main()
 {
     int i,n;
     float x[10],y[10];
-    float sumx=0,sumy=0,sumxy=0,sumx2=0
+    float sumx=0,sumy=0,sumxy=0,sumx2=0;
     float a,b;
                                  
     printf("Enter number of data points: ");
