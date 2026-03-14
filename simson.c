@@ -3,7 +3,7 @@
 int main()
 {
     int i,n;
-    float x[20],y[20],h,sum1=0,sum2=0,I;
+    float x[20],y[20],h,sum1=0,sum2=0,I
 
     printf("Enter number of intervals (even): ");
     scanf("%d",&n);
