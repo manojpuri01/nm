@@ -2,7 +2,7 @@
 
 float f(float x, float y)
 {
-    return x + y;   // example differential equation dy/dx = x + y
+    return x + y;   //  dy/dx = x + y
 }
 
 int main()
